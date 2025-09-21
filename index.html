@@ -5,35 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="nav-menu">
-        <h1 class="title">Dashboard</h1>
+        <div class="title">
+            <span class="iconify title-icon" data-icon="mdi-view-dashboard"></span>
+            <h1 class="nav-title">Dashboard</h1>
+        </div>
         <div class="page-links">
-            <a href="./home.html">Home</a>
-            <a href="./profile.html">Profile</a>
-            <a href="./messages.html">Messages</a>
-            <a href="./history.html">History</a>
-            <a href="./tasks.html">Tasks</a>
-            <a href="./communities.html">Communities</a>
+            <ul class="pages">
+                <li class="nav-link">
+                    <span class="iconify link-icon" data-icon="mdi-home"></span>
+                    <a href="./home.html">Home</a>
+                </li>
+                <li class="nav-link">
+                    <span class="iconify link-icon" data-icon="mdi-card-account-details"></span>
+                    <a href="./profile.html">Profile</a>
+                </li>
+                <li class="nav-link">
+                    <span class="iconify link-icon" data-icon="mdi-message-reply"></span>
+                    <a href="./messages.html">Messages</a>
+                </li>
+                <li class="nav-link">
+                    <span class="iconify link-icon" data-icon="mdi-clock-time-three"></span>
+                    <a href="./history.html">History</a>
+                </li>
+                <li class="nav-link">
+                    <span class="iconify link-icon" data-icon="mdi-note-multiple"></span>
+                    <a href="./tasks.html">Tasks</a>
+                </li>
+                <li class="nav-link">
+                    <span class="iconify link-icon" data-icon="mdi-account-group"></span>
+                    <a href="./communities.html">Communities</a>
+                </li>
+            </ul>
         </div>
         <div class="user-links">
-            <a href="./settings.html">Settings</a>
-            <a href="./support.html">Support</a>
-            <a href="./privacy">Privacy</a>
+            <ul class="pages">
+                <li class="nav-link">
+                    <span class="iconify link-icon" data-icon="mdi-cog"></span>
+                    <a href="./settings.html">Settings</a>
+                </li>
+                <li class="nav-link">
+                    <span class="iconify link-icon" data-icon="mdi-help-box"></span>
+                    <a href="./support.html">Support</a>
+                </li>
+                <li class="nav-link">
+                    <span class="iconify link-icon" data-icon="mdi-shield-check"></span>
+                    <a href="./privacy">Privacy</a>
+                </li>
+            </ul>
         </div>
     </nav>
     <header>
         <div class="quick-access">
             <div class="search">
-                <img src="" alt="search icon">
-                <input type="text">
+                <span class="iconify search-icon" data-icon="mdi-magnify"></span>
+                <input class="search-bar" type="text">
             </div>
             <div class="preferences">
                 <button id="notification-toggle">
-                    <img src="" alt="toggle notification">
+                     <span class="iconify body-btn" data-icon="mdi-bell-ring-outline"></span>
                 </button>
-                <img src="" alt="profile picture">
+                <div class="profile-picture">
+                    <img src="" alt="profile picture">
+                </div>
                 <p>Ernesto</p>
             </div>
         </div>
@@ -55,13 +94,13 @@
             <p class="project-desc">Sample description</p>
             <div class="project-btns-container">
                 <button class="project-btn add-to-fav">
-                    <img src="" alt="add to favorites">
+                    <span class="iconify body-btn" data-icon="mdi-star-plus-outline"></span>
                 </button>
                 <button class="project-btn inspect">
-                    <img src="" alt="inspect project">
+                    <span class="iconify body-btn" data-icon="mdi-eye-plus-outline"></span>
                 </button>
                 <button class="project-btn share">
-                    <img src="" alt="share">
+                    <span class="iconify body-btn" data-icon="mdi-share-variant-outline"></span>
                 </button>
             </div>
         </div>
@@ -70,13 +109,13 @@
             <p class="project-desc">Sample description</p>
             <div class="project-btns-container">
                 <button class="project-btn add-to-fav">
-                    <img src="" alt="add to favorites">
+                    <span class="iconify body-btn" data-icon="mdi-star-plus-outline"></span>
                 </button>
                 <button class="project-btn inspect">
-                    <img src="" alt="inspect project">
+                    <span class="iconify body-btn" data-icon="mdi-eye-plus-outline"></span>
                 </button>
                 <button class="project-btn share">
-                    <img src="" alt="share">
+                    <span class="iconify body-btn" data-icon="mdi-share-variant-outline"></span>
                 </button>
             </div>
         </div>
@@ -85,13 +124,13 @@
             <p class="project-desc">Sample description</p>
             <div class="project-btns-container">
                 <button class="project-btn add-to-fav">
-                    <img src="" alt="add to favorites">
+                    <span class="iconify body-btn" data-icon="mdi-star-plus-outline"></span>
                 </button>
                 <button class="project-btn inspect">
-                    <img src="" alt="inspect project">
+                    <span class="iconify body-btn" data-icon="mdi-eye-plus-outline"></span>
                 </button>
                 <button class="project-btn share">
-                    <img src="" alt="share">
+                    <span class="iconify body-btn" data-icon="mdi-share-variant-outline"></span>
                 </button>
             </div>
         </div>
@@ -100,13 +139,13 @@
             <p class="project-desc">Sample description</p>
             <div class="project-btns-container">
                 <button class="project-btn add-to-fav">
-                    <img src="" alt="add to favorites">
+                    <span class="iconify body-btn" data-icon="mdi-star-plus-outline"></span>
                 </button>
                 <button class="project-btn inspect">
-                    <img src="" alt="inspect project">
+                    <span class="iconify body-btn" data-icon="mdi-eye-plus-outline"></span>
                 </button>
                 <button class="project-btn share">
-                    <img src="" alt="share">
+                    <span class="iconify body-btn" data-icon="mdi-share-variant-outline"></span>
                 </button>
             </div>
         </div>
@@ -115,13 +154,13 @@
             <p class="project-desc">Sample description</p>
             <div class="project-btns-container">
                 <button class="project-btn add-to-fav">
-                    <img src="" alt="add to favorites">
+                    <span class="iconify body-btn" data-icon="mdi-star-plus-outline"></span>
                 </button>
                 <button class="project-btn inspect">
-                    <img src="" alt="inspect project">
+                    <span class="iconify body-btn" data-icon="mdi-eye-plus-outline"></span>
                 </button>
                 <button class="project-btn share">
-                    <img src="" alt="share">
+                    <span class="iconify body-btn" data-icon="mdi-share-variant-outline"></span>
                 </button>
             </div>
         </div>
@@ -130,13 +169,13 @@
             <p class="project-desc">Sample description</p>
             <div class="project-btns-container">
                 <button class="project-btn add-to-fav">
-                    <img src="" alt="add to favorites">
+                    <span class="iconify body-btn" data-icon="mdi-star-plus-outline"></span>
                 </button>
                 <button class="project-btn inspect">
-                    <img src="" alt="inspect project">
+                    <span class="iconify body-btn" data-icon="mdi-eye-plus-outline"></span>
                 </button>
                 <button class="project-btn share">
-                    <img src="" alt="share">
+                    <span class="iconify body-btn" data-icon="mdi-share-variant-outline"></span>
                 </button>
             </div>
         </div>
@@ -186,4 +225,5 @@
     </section>
 </body>
 <script src="./script.js"></script>
+<script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
 </html>

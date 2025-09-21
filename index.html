@@ -10,219 +10,243 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="nav-menu">
-        <div class="title">
-            <span class="iconify title-icon" data-icon="mdi-view-dashboard"></span>
-            <h1 class="nav-title">Dashboard</h1>
-        </div>
-        <div class="page-links">
-            <ul class="pages">
-                <li class="nav-link">
-                    <span class="iconify link-icon" data-icon="mdi-home"></span>
-                    <a href="./home.html">Home</a>
-                </li>
-                <li class="nav-link">
-                    <span class="iconify link-icon" data-icon="mdi-card-account-details"></span>
-                    <a href="./profile.html">Profile</a>
-                </li>
-                <li class="nav-link">
-                    <span class="iconify link-icon" data-icon="mdi-message-reply"></span>
-                    <a href="./messages.html">Messages</a>
-                </li>
-                <li class="nav-link">
-                    <span class="iconify link-icon" data-icon="mdi-clock-time-three"></span>
-                    <a href="./history.html">History</a>
-                </li>
-                <li class="nav-link">
-                    <span class="iconify link-icon" data-icon="mdi-note-multiple"></span>
-                    <a href="./tasks.html">Tasks</a>
-                </li>
-                <li class="nav-link">
-                    <span class="iconify link-icon" data-icon="mdi-account-group"></span>
-                    <a href="./communities.html">Communities</a>
-                </li>
-            </ul>
-        </div>
-        <div class="user-links">
-            <ul class="pages">
-                <li class="nav-link">
-                    <span class="iconify link-icon" data-icon="mdi-cog"></span>
-                    <a href="./settings.html">Settings</a>
-                </li>
-                <li class="nav-link">
-                    <span class="iconify link-icon" data-icon="mdi-help-box"></span>
-                    <a href="./support.html">Support</a>
-                </li>
-                <li class="nav-link">
-                    <span class="iconify link-icon" data-icon="mdi-shield-check"></span>
-                    <a href="./privacy">Privacy</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <header>
-        <div class="quick-access">
-            <div class="search">
-                <span class="iconify search-icon" data-icon="mdi-magnify"></span>
-                <input class="search-bar" type="text">
+    <div class="layout">
+        <nav class="nav-menu">
+            <div class="title">
+                <span class="iconify title-icon" data-icon="mdi-view-dashboard"></span>
+                <h1 class="nav-title">Dashboard</h1>
             </div>
-            <div class="preferences">
-                <button id="notification-toggle">
-                     <span class="iconify body-btn" data-icon="mdi-bell-ring-outline"></span>
-                </button>
-                <div class="profile-picture">
-                    <img src="" alt="profile picture">
+            <div class="page-links">
+                <ul class="pages">
+                    <li>
+                        <a class="nav-link" href="./home.html">
+                            <span class="iconify link-icon" data-icon="mdi-home"></span>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./profile.html">
+                            <span class="iconify link-icon" data-icon="mdi-card-account-details"></span>
+                            Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./messages.html">
+                            <span class="iconify link-icon" data-icon="mdi-message-reply"></span>
+                            Messages
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./history.html">
+                            <span class="iconify link-icon" data-icon="mdi-clock-time-three"></span>
+                            History
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./tasks.html">
+                            <span class="iconify link-icon" data-icon="mdi-note-multiple"></span>
+                            Tasks
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./communities.html">
+                            <span class="iconify link-icon" data-icon="mdi-account-group"></span>
+                            Communities
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="user-links">
+                <ul class="pages">
+                    <li>
+                        <a class="nav-link" href="./settings.html">
+                            <span class="iconify link-icon" data-icon="mdi-cog"></span>
+                            Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./support.html">
+                            <span class="iconify link-icon" data-icon="mdi-help-box"></span>
+                            Support
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./privacy">
+                            <span class="iconify link-icon" data-icon="mdi-shield-check"></span>
+                            Privacy
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main class="main-content">
+            <header>
+                <div class="quick-access">
+                    <div class="search">
+                        <span class="iconify search-icon" data-icon="mdi-magnify"></span>
+                        <input class="search-bar" type="text">
+                    </div>
+                    <div class="preferences">
+                        <button class="notification-toggle">
+                            <span class="iconify body-btn" data-icon="mdi-bell-ring-outline"></span>
+                        </button>
+                        <div class="profile-picture">
+                            <img src="./pfps/jalenbrunson.jpg" alt="profile picture">
+                        </div>
+                        <p class="user-name">Ernesto</p>
+                    </div>
                 </div>
-                <p>Ernesto</p>
-            </div>
-        </div>
-        <div class="user-greet">
-            <img src="" alt="profile picture">
-            <p class="greet">Hi there,</p>
-            <h2 class="name">Ernesto (@failingcards)</h2>
-        </div>
-        <div class="user-btns">
-            <button class="header-btn">New</button>
-            <button class="header-btn">Upload</button>
-            <button class="header-btn">Share</button>
-        </div>
-    </header>
-    <section id="projects">
-        <h2 class="section-title">Your Projects</h2>
-        <div class="project-tile">
-            <h3 class="project-title">Sample Project</h3>
-            <p class="project-desc">Sample description</p>
-            <div class="project-btns-container">
-                <button class="project-btn add-to-fav">
-                    <span class="iconify body-btn" data-icon="mdi-star-plus-outline"></span>
-                </button>
-                <button class="project-btn inspect">
-                    <span class="iconify body-btn" data-icon="mdi-eye-plus-outline"></span>
-                </button>
-                <button class="project-btn share">
-                    <span class="iconify body-btn" data-icon="mdi-share-variant-outline"></span>
-                </button>
-            </div>
-        </div>
-        <div class="project-tile">
-            <h3 class="project-title">Sample Project</h3>
-            <p class="project-desc">Sample description</p>
-            <div class="project-btns-container">
-                <button class="project-btn add-to-fav">
-                    <span class="iconify body-btn" data-icon="mdi-star-plus-outline"></span>
-                </button>
-                <button class="project-btn inspect">
-                    <span class="iconify body-btn" data-icon="mdi-eye-plus-outline"></span>
-                </button>
-                <button class="project-btn share">
-                    <span class="iconify body-btn" data-icon="mdi-share-variant-outline"></span>
-                </button>
-            </div>
-        </div>
-        <div class="project-tile">
-            <h3 class="project-title">Sample Project</h3>
-            <p class="project-desc">Sample description</p>
-            <div class="project-btns-container">
-                <button class="project-btn add-to-fav">
-                    <span class="iconify body-btn" data-icon="mdi-star-plus-outline"></span>
-                </button>
-                <button class="project-btn inspect">
-                    <span class="iconify body-btn" data-icon="mdi-eye-plus-outline"></span>
-                </button>
-                <button class="project-btn share">
-                    <span class="iconify body-btn" data-icon="mdi-share-variant-outline"></span>
-                </button>
-            </div>
-        </div>
-        <div class="project-tile">
-            <h3 class="project-title">Sample Project</h3>
-            <p class="project-desc">Sample description</p>
-            <div class="project-btns-container">
-                <button class="project-btn add-to-fav">
-                    <span class="iconify body-btn" data-icon="mdi-star-plus-outline"></span>
-                </button>
-                <button class="project-btn inspect">
-                    <span class="iconify body-btn" data-icon="mdi-eye-plus-outline"></span>
-                </button>
-                <button class="project-btn share">
-                    <span class="iconify body-btn" data-icon="mdi-share-variant-outline"></span>
-                </button>
-            </div>
-        </div>
-        <div class="project-tile">
-            <h3 class="project-title">Sample Project</h3>
-            <p class="project-desc">Sample description</p>
-            <div class="project-btns-container">
-                <button class="project-btn add-to-fav">
-                    <span class="iconify body-btn" data-icon="mdi-star-plus-outline"></span>
-                </button>
-                <button class="project-btn inspect">
-                    <span class="iconify body-btn" data-icon="mdi-eye-plus-outline"></span>
-                </button>
-                <button class="project-btn share">
-                    <span class="iconify body-btn" data-icon="mdi-share-variant-outline"></span>
-                </button>
-            </div>
-        </div>
-        <div class="project-tile">
-            <h3 class="project-title">Sample Project</h3>
-            <p class="project-desc">Sample description</p>
-            <div class="project-btns-container">
-                <button class="project-btn add-to-fav">
-                    <span class="iconify body-btn" data-icon="mdi-star-plus-outline"></span>
-                </button>
-                <button class="project-btn inspect">
-                    <span class="iconify body-btn" data-icon="mdi-eye-plus-outline"></span>
-                </button>
-                <button class="project-btn share">
-                    <span class="iconify body-btn" data-icon="mdi-share-variant-outline"></span>
-                </button>
-            </div>
-        </div>
-    </section>
-    <section id="announcements">
-        <h2>Announcements</h2>
-        <div class="announcement-container">
-            <div class="announcement">
-                <p class="announcement-title">Sample Announcement Title</p>
-                <p class="announcement-desc">Sample Announcement Description</p>
-            </div>
-            <hr>
-            <div class="announcement">
-                <p class="announcement-title">Sample Announcement Title</p>
-                <p class="announcement-desc">Sample Announcement Description</p>
-            </div>
-            <hr>
-            <div class="announcement">
-                <p class="announcement-title">Sample Announcement Title</p>
-                <p class="announcement-desc">Sample Announcement Description</p>
-            </div>
-        </div>
-    </section>
-    <section id="trending">
-        <div class="trending-container">
-            <div class="user">
-                <img src="" alt="trending user profile picture">
-                <p class="trending-user">@user</p>
-                <p class="trending-project">Sample Trending Project</p>
-            </div>
-            <div class="user">
-                <img src="" alt="trending user profile picture">
-                <p class="trending-user">@user</p>
-                <p class="trending-project">Sample Trending Project</p>
-            </div>
-            <div class="user">
-                <img src="" alt="trending user profile picture">
-                <p class="trending-user">@user</p>
-                <p class="trending-project">Sample Trending Project</p>
-            </div>
-            <div class="user">
-                <img src="" alt="trending user profile picture">
-                <p class="trending-user">@user</p>
-                <p class="trending-project">Sample Trending Project</p>
-            </div>
-        </div>
-    </section>
+                <div class="user-section">
+                    <img class="profile-picture" src="./pfps/jalenbrunson.jpg" alt="profile picture">
+                    <div class="greet-user">
+                        <p class="greet">Hi there,</p>
+                        <h2 class="name">Ernesto (@failingcards)</h2>
+                    </div>
+                    <div class="header-btns">
+                        <button class="header-btn">New</button>
+                        <button class="header-btn">Upload</button>
+                        <button class="header-btn">Share</button>
+                </div>
+                </div>
+            </header>
+            <section id="projects">
+                <h2 class="section-title">Your Projects</h2>
+                <div class="project-tile">
+                    <h3 class="project-title">Sample Project</h3>
+                    <p class="project-desc">Sample description</p>
+                    <div class="project-btns-container">
+                        <button class="project-btn add-to-fav">
+                            <span class="iconify body-btn" data-icon="mdi-star-plus-outline"></span>
+                        </button>
+                        <button class="project-btn inspect">
+                            <span class="iconify body-btn" data-icon="mdi-eye-plus-outline"></span>
+                        </button>
+                        <button class="project-btn share">
+                            <span class="iconify body-btn" data-icon="mdi-share-variant-outline"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="project-tile">
+                    <h3 class="project-title">Sample Project</h3>
+                    <p class="project-desc">Sample description</p>
+                    <div class="project-btns-container">
+                        <button class="project-btn add-to-fav">
+                            <span class="iconify body-btn" data-icon="mdi-star-plus-outline"></span>
+                        </button>
+                        <button class="project-btn inspect">
+                            <span class="iconify body-btn" data-icon="mdi-eye-plus-outline"></span>
+                        </button>
+                        <button class="project-btn share">
+                            <span class="iconify body-btn" data-icon="mdi-share-variant-outline"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="project-tile">
+                    <h3 class="project-title">Sample Project</h3>
+                    <p class="project-desc">Sample description</p>
+                    <div class="project-btns-container">
+                        <button class="project-btn add-to-fav">
+                            <span class="iconify body-btn" data-icon="mdi-star-plus-outline"></span>
+                        </button>
+                        <button class="project-btn inspect">
+                            <span class="iconify body-btn" data-icon="mdi-eye-plus-outline"></span>
+                        </button>
+                        <button class="project-btn share">
+                            <span class="iconify body-btn" data-icon="mdi-share-variant-outline"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="project-tile">
+                    <h3 class="project-title">Sample Project</h3>
+                    <p class="project-desc">Sample description</p>
+                    <div class="project-btns-container">
+                        <button class="project-btn add-to-fav">
+                            <span class="iconify body-btn" data-icon="mdi-star-plus-outline"></span>
+                        </button>
+                        <button class="project-btn inspect">
+                            <span class="iconify body-btn" data-icon="mdi-eye-plus-outline"></span>
+                        </button>
+                        <button class="project-btn share">
+                            <span class="iconify body-btn" data-icon="mdi-share-variant-outline"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="project-tile">
+                    <h3 class="project-title">Sample Project</h3>
+                    <p class="project-desc">Sample description</p>
+                    <div class="project-btns-container">
+                        <button class="project-btn add-to-fav">
+                            <span class="iconify body-btn" data-icon="mdi-star-plus-outline"></span>
+                        </button>
+                        <button class="project-btn inspect">
+                            <span class="iconify body-btn" data-icon="mdi-eye-plus-outline"></span>
+                        </button>
+                        <button class="project-btn share">
+                            <span class="iconify body-btn" data-icon="mdi-share-variant-outline"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="project-tile">
+                    <h3 class="project-title">Sample Project</h3>
+                    <p class="project-desc">Sample description</p>
+                    <div class="project-btns-container">
+                        <button class="project-btn add-to-fav">
+                            <span class="iconify body-btn" data-icon="mdi-star-plus-outline"></span>
+                        </button>
+                        <button class="project-btn inspect">
+                            <span class="iconify body-btn" data-icon="mdi-eye-plus-outline"></span>
+                        </button>
+                        <button class="project-btn share">
+                            <span class="iconify body-btn" data-icon="mdi-share-variant-outline"></span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section id="announcements">
+                <h2>Announcements</h2>
+                <div class="announcement-container">
+                    <div class="announcement">
+                        <p class="announcement-title">Sample Announcement Title</p>
+                        <p class="announcement-desc">Sample Announcement Description</p>
+                    </div>
+                    <hr>
+                    <div class="announcement">
+                        <p class="announcement-title">Sample Announcement Title</p>
+                        <p class="announcement-desc">Sample Announcement Description</p>
+                    </div>
+                    <hr>
+                    <div class="announcement">
+                        <p class="announcement-title">Sample Announcement Title</p>
+                        <p class="announcement-desc">Sample Announcement Description</p>
+                    </div>
+                </div>
+            </section>
+            <section id="trending">
+                <div class="trending-container">
+                    <div class="user">
+                        <img src="" alt="trending user profile picture">
+                        <p class="trending-user">@user</p>
+                        <p class="trending-project">Sample Trending Project</p>
+                    </div>
+                    <div class="user">
+                        <img src="" alt="trending user profile picture">
+                        <p class="trending-user">@user</p>
+                        <p class="trending-project">Sample Trending Project</p>
+                    </div>
+                    <div class="user">
+                        <img src="" alt="trending user profile picture">
+                        <p class="trending-user">@user</p>
+                        <p class="trending-project">Sample Trending Project</p>
+                    </div>
+                    <div class="user">
+                        <img src="" alt="trending user profile picture">
+                        <p class="trending-user">@user</p>
+                        <p class="trending-project">Sample Trending Project</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 <script src="./script.js"></script>
 <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
